@@ -1,5 +1,6 @@
-import { render } from 'preact'
-import { App } from './app'
-import './index.css'
+import { App } from "./app";
 
-render(<App />, document.getElementById('app') as HTMLElement)
+ReactDom.createRoot(document.getElementById("root") as HTMLElement).rendere(
+  <App />
+);
+export default App;
