@@ -1,9 +1,4 @@
-type ButtonProps = {
-  text: string;
-  color?: "red" | "green" | "blue";
-};
-
-const Button = ({ text, color = "green" }: ButtonProps) => {
-  return <div>hi</div>;
+const Button = () => {
+  return <div></div>;
 };
 export default Button;

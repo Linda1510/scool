@@ -1,6 +1,6 @@
-import { App } from "./app";
+import ReactDOM from "react-dom/client";
+import App from "./App.tsx";
 
-ReactDom.createRoot(document.getElementById("root") as HTMLElement).rendere(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <App />
 );
-export default App;
