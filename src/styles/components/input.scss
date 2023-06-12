@@ -2,12 +2,28 @@
   width: 100%;
   font-size: 1rem;
   padding: 0.75rem 1 rem;
+  padding-right: 2.25rem;
   border-radius: round;
   border: 1px;
   transition: all 250ms ease-in-out;
   &:focus-visible {
     outline: none;
     border-color: aqua;
+  }
+  &--sm {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+  &--md {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+  }
+  &--lg {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.75rem;
+  }
+  &--hasIcon {
+    padding-right: 2.2rem;
   }
   &__wraper {
     position: relative;
@@ -18,5 +34,9 @@
     position: absolute;
     right: 0.625rem;
     left: 0.625rem;
+    top: 50%;
+    svg {
+      transform: translateY(-50%);
+    }
   }
 }
