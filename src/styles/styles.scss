@@ -19,13 +19,13 @@ body {
   --color-green-600: #158f48;
   --color-blue-500: #2980b9;
   --color-blue-500: #136297;
-
+  --color-yelow-200: #f4f18f;
   //border
   --border-rounded: 0.5rem;
 }
-
 @import "./components/btn.scss";
 @import "./components/container.scss";
 @import "./components/devider.scss";
 @import "./components/input.scss";
 @import "./components/modal.scss";
+@import "./components/sidebar.scss";

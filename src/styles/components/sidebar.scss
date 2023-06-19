@@ -1,0 +1,21 @@
+.sidebar {
+  position: fixed;
+  background-color: var(--color-yelow-200);
+  color: var(--color-black);
+  height: calc(100vh - 7rem);
+  width: 18rem;
+  border-radius: var(--border-rounded);
+  top: 6rem;
+  left: 1rem;
+  padding: 1.5rem;
+  transition: 250ms ease-in-out;
+  &.active {
+    left: 1rem;
+  }
+  &__link {
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+}

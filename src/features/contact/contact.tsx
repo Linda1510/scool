@@ -1,9 +1,12 @@
+import Container from "../../components/container";
+import Devider from "../../components/devider";
+
 const Contact = () => {
   return (
-    <Containetr>
+    <Container>
       <h1>Contact paige</h1>
       <Devider />
-    </Containetr>
+    </Container>
   );
 };
 export default Contact;

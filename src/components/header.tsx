@@ -1,15 +1,28 @@
 import { NavLink } from "react-router-dom";
-
-const Header = () => {
+import logo from "./../assets/images/iconduck.png";
+type HeaderProps = {
+  toggleSidebar: () => void;
+};
+const Header = ({ toggleSidebar }: HeaderProps) => {
   return (
-    <header className="header">
-      <div className="header__logo">Logo</div>
-      <nav className="header__nav">
-        <NavLink className={`header__nav__link`} to={"/"}>
-          HI
-        </NavLink>
-      </nav>
-    </header>
+    <div className="header__wrapper">
+      <header className="header">
+        <img
+          onClick={toggleSidebar}
+          className="header__logo"
+          src={logo}
+          alt="animated dog"
+        />
+        <nav className="header__nav">
+          <NavLink className="header__nav__link" to="/">
+            Home
+          </NavLink>
+          <NavLink className="header__nav__link" to="/contact">
+            Contact
+          </NavLink>
+        </nav>
+      </header>
+    </div>
   );
 };
 export default Header;
