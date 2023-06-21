@@ -20,6 +20,7 @@ body {
   --color-blue-500: #2980b9;
   --color-blue-500: #136297;
   --color-yelow-200: #f4f18f;
+  --color-red-200: #c2200e;
   //border
   --border-rounded: 0.5rem;
 }
@@ -29,3 +30,4 @@ body {
 @import "./components/input.scss";
 @import "./components/modal.scss";
 @import "./components/sidebar.scss";
+@import "./components/progressbar.scss";

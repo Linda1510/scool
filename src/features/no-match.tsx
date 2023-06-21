@@ -1,9 +1,10 @@
+import Container from "../components/container";
+
 const NoMatch = () => {
   return (
-    <div>
-      <h1>404 EROR</h1>
-      <h4>Try again</h4>
-    </div>
+    <Container>
+      <div></div>
+    </Container>
   );
 };
 export default NoMatch;
