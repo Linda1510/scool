@@ -6,6 +6,7 @@ import Home from "./features/home";
 import NoMatch from "./features/no-match";
 import Contact from "./features/contact/contact";
 import ProgressBar from "./features/progressBar/progresBarr";
+import Animals from "./features/animal/animal";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             path="progress-bar"
             element={<ProgressBar color="red" progress={50} />}
           />
+          <Route path="animals" element={<Animals />} />
           {/* Using path="*" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}

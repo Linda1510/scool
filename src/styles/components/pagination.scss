@@ -1,0 +1,25 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: center;
+  &__item {
+    width: 1.5rem;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    padding: 0.5, 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &.isActive {
+      background-color: aqua;
+    }
+  }
+}
