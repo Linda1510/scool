@@ -8,6 +8,7 @@ import Contact from "./features/contact/contact";
 import ProgressBar from "./features/progressBar/progresBarr";
 import Animals from "./features/animal/animal";
 import LoaderPage from "./features/loader/loader-page";
+import SelectPage from "./features/select/select-page";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="animals" element={<Animals />} />
           <Route path="loader" element={<LoaderPage />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="select" element={<SelectPage />} />
           <Route
             path="progress-bar"
             element={<ProgressBar color="red" progress={50} />}

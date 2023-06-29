@@ -1,33 +1,43 @@
 import { AnimalsType } from "./animal";
 import imgpaw from "./../../assets/image/paw.png";
-type animalCardProps = {
-  animal: AnimalsType;
+type AnimalCardProps = {
+  animal: AnimalType;
 };
 
-const AnimalCard = ({ animal }: animalCardProps) => {
-  const { name, species, animalClass } = animal;
+const AnimalCard = ({ animal }: AnimalCardProps) => {
+  const { name, animalClass, diet, species, habitat } = animal;
+
   return (
     <div className="card">
       <div className="card__header">
         <img
           className="card__header__img"
+          width={"100%"}
           src={`https://source.unsplash.com/random/500x500/?${animal.name.replace(
             " ",
             "-"
           )}`}
-          alt=""
+          alt="Image of an animal"
         />
-      </div>
-      <div>
-        <div className="card__title">{name}</div>
-
-        <div className="card__subtitle">{species}</div>
+        <div>
+          <div className="card__title">{name}</div>
+          <div className="card__subtitle">{species}</div>
+        </div>
       </div>
       <div className="card__row">
-        <img src={imgpaw} alt="" />
+        <img src={imgClass} alt="icon of animal class" />
         <span>{animalClass}</span>
+      </div>
+      <div className="card__row">
+        <img src={imgDiet} alt="icon of animal diet" />
+        <span>{diet}</span>
+      </div>
+      <div className="card__row">
+        <img src={imgHabitat} alt="icon of animal habitat" />
+        <span>{habitat}</span>
       </div>
     </div>
   );
 };
+
 export default AnimalCard;

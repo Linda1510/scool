@@ -1,19 +1,20 @@
 import IconChevronLeft from "./../assets/icons/chevron-left";
-type PaginationsProps = {
+type PaginationProps = {
   onPaginate: (page: number) => void;
   numberOfPages: number;
   activePage: number;
 };
+
 const Pagination = ({
   onPaginate,
   numberOfPages,
   activePage,
-}: PaginationsProps) => {
+}: PaginationProps) => {
   return (
     <div className="pagination">
       <span
         onClick={() => onPaginate(activePage - 1)}
-        className={`pagination__item ${activePage === 1}`}
+        className={`pagination__item ${activePage <= 1 ? "isDisabled" : ""}`}
       >
         <IconChevronLeft />
       </span>
@@ -22,18 +23,26 @@ const Pagination = ({
         .map((page, index) => {
           return (
             <span
+              key={index}
               onClick={() => onPaginate(index + 1)}
               className={`pagination__item ${
-                activePage >= numberOfPages ? "isDisabled" : ""
+                activePage === index + 1 ? "isActive" : ""
               }`}
             >
               {index + 1}
             </span>
           );
         })}
-      <span>2</span>
-      <span>4</span>
+      <span
+        onClick={() => onPaginate(activePage + 1)}
+        className={`pagination__item ${
+          activePage >= numberOfPages ? "isDisabled" : ""
+        }`}
+      >
+        <IconChevronRight />
+      </span>
     </div>
   );
 };
+
 export default Pagination;

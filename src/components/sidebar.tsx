@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
 
+
 type SidebarProps = {
   isOpen: boolean;
   onClose: () => void;
 };
+
 export type LinkType = {
   path: string;
   label: string;
@@ -18,6 +20,10 @@ const linkList: LinkType[] = [
     path: "/loader",
     label: "Loader",
   },
+  {
+    path: "/select",
+    label: "Select",
+  },
 ];
 
 const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
@@ -25,7 +31,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
     <div className={`sidebar ${isOpen ? "isActive" : ""}`}>
       {linkList.map((link) => {
         return (
-          <div className="sidebar__link__wrapper">
+          <div key={link.path} className="sidebar__link__wrapper">
             <NavLink
               key={link.path}
               onClick={onClose}
