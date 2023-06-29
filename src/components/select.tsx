@@ -1,5 +1,5 @@
 import { useState } from "react";
-import IconChevronDown from "../assets/icons/chevron-down";
+import IconChevronDown from "./../assets/icons/chevron-left";
 import { OptionType } from "../features/select/select-page";
 
 type SelectProps = {

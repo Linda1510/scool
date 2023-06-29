@@ -9,8 +9,8 @@
   left: 1rem;
   padding: 1.5rem;
   transition: 250ms ease-in-out;
-  &.active {
-    left: 1rem;
+  &.isActive {
+    left: -18rem;
   }
   &__link {
     color: black;

@@ -1,5 +1,9 @@
+import Button from "../../components/button";
 import Container from "../../components/container";
 import Devider from "../../components/devider";
+import Field from "../../components/field";
+import { ValuesType } from "./types";
+import { useState } from "react";
 const initialData: ValuesType = {
   firstName: "",
   lastName: "",

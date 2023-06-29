@@ -1,6 +1,7 @@
 {
   "animals": [
     {
+      "id": "1",
       "name": "Lion",
       "species": "Panthera leo",
       "class": "Mammal",
@@ -8,6 +9,7 @@
       "habitat": "Grasslands and savannas"
     },
     {
+      "id": "2",
       "name": "Elephant",
       "species": "Loxodonta africana",
       "class": "Mammal",
@@ -15,6 +17,7 @@
       "habitat": "Forests and grasslands"
     },
     {
+      "id": "3",
       "name": "Tiger",
       "species": "Panthera tigris",
       "class": "Mammal",
@@ -22,6 +25,7 @@
       "habitat": "Various habitats, including forests and grasslands"
     },
     {
+      "id": "4",
       "name": "Giraffe",
       "species": "Giraffa camelopardalis",
       "class": "Mammal",
@@ -29,6 +33,7 @@
       "habitat": "Savannas and open woodlands"
     },
     {
+      "id": "5",
       "name": "Penguin",
       "species": "Spheniscidae",
       "class": "Bird",
@@ -36,6 +41,7 @@
       "habitat": "Antarctica and the surrounding areas"
     },
     {
+      "id": "6",
       "name": "Cheetah",
       "species": "Acinonyx jubatus",
       "class": "Mammal",
@@ -43,6 +49,7 @@
       "habitat": "Grasslands and open plains"
     },
     {
+      "id": "7",
       "name": "Gorilla",
       "species": "Gorilla gorilla",
       "anmalClass": "Mammal",
@@ -50,6 +57,7 @@
       "habitat": "Rainforests"
     },
     {
+      "id": "8",
       "name": "Kangaroo",
       "species": "Macropus",
       "anmalClass": "Mammal",
@@ -57,6 +65,7 @@
       "habitat": "Grasslands and forests"
     },
     {
+      "id": "9",
       "name": "Eagle",
       "species": "Accipitridae",
       "class": "Bird",
@@ -64,6 +73,7 @@
       "habitat": "Various habitats, including mountains and forests"
     },
     {
+      "id": 9,
       "name": "Dolphin",
       "species": "Delphinidae",
       "class": "Mammal",
@@ -71,6 +81,7 @@
       "habitat": "Oceans and seas"
     },
     {
+      "id": 10,
       "name": "Panda",
       "species": "Ailuropoda melanoleuca",
       "class": "Mammal",

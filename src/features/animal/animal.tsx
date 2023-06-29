@@ -5,6 +5,8 @@ import Devider from "../../components/devider";
 import Pagination from "../../components/pagination";
 import Loader from "../../components/loader";
 import FloatingButton from "../../components/floatingbutton";
+import Select from "../../components/select";
+import { OptionType } from "../select/select-page";
 
 export type AnimalType = {
   name: string;

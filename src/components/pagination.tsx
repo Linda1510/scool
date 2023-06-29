@@ -39,7 +39,7 @@ const Pagination = ({
           activePage >= numberOfPages ? "isDisabled" : ""
         }`}
       >
-        <IconChevronRight />
+        <IconChevronLeft />
       </span>
     </div>
   );

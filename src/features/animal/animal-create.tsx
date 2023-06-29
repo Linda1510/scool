@@ -1,5 +1,11 @@
+import { useState } from "react";
+import Button from "../../components/button";
 import Container from "../../components/container";
 import Devider from "../../components/devider";
+import Field from "../../components/field";
+import { ValuesType } from "../contact/types";
+import { AnimalType } from "./animal";
+
 const initialData: AnimalType = {
   name: "",
   species: "",
@@ -7,20 +13,55 @@ const initialData: AnimalType = {
   diet: "",
   habitat: "",
 };
+const dataHeaders = {
+  "Content-Type": "application/json",
+};
 
 const AnimalCreate = () => {
   const [inputsValue, setInputsValue] = useState<ValuesType>(initialData);
-
+  const [error, setError] = useState("");
   const handleInputsValue = (value: string, id: string) => {
     const newState: ValuesType = { ...inputsValue };
     newState[id] = value;
     setInputsValue(newState);
+  };
+  const onSubmit = (inputsValue: ValuesType) => {
+    let getOut = false;
+    let errorInputs = "";
+    Object.keys(inputsValue).forEach((key) => {
+      if (inputsValue[key] === "") {
+        getOut = true;
+        errorInputs = errorInputs + key + ",";
+      }
+    });
+    if (getOut) {
+      setError(errorInputs.substring(0, errorInputs.length - 2));
+      return;
+    } else {
+      setError("");
+    }
+    fetch("http://localhost:3000/animals", {
+      method: "POST",
+      headers: dataHeaders,
+      body: JSON.stringify(inputsValue),
+    })
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+      })
+      .then((data) => {
+        getPosts();
+        setModal(false);
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
     <Container>
       <h1>Create a new animal</h1>
       <Devider />
+      {error && <div className="message message--error">{error}</div>}
       <div>
         <Field
           id="name"
@@ -53,7 +94,7 @@ const AnimalCreate = () => {
           onChange={(newValue) => handleInputsValue(newValue, "habitat")}
         />
       </div>
-      <Button text="Dodaj životinju" onClick={() => console.log(inputsValue)} />
+      <Button text="Dodaj životinju" onClick={() => onSubmit(inputsValue)} />
     </Container>
   );
 };

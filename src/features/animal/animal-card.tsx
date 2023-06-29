@@ -1,11 +1,11 @@
-import { AnimalsType } from "./animal";
+import { AnimalType } from "./animal";
 import imgpaw from "./../../assets/image/paw.png";
 type AnimalCardProps = {
   animal: AnimalType;
 };
 
 const AnimalCard = ({ animal }: AnimalCardProps) => {
-  const { name, animalClass, diet, species, habitat } = animal;
+  const { name, species } = animal;
 
   return (
     <div className="card">
@@ -23,18 +23,6 @@ const AnimalCard = ({ animal }: AnimalCardProps) => {
           <div className="card__title">{name}</div>
           <div className="card__subtitle">{species}</div>
         </div>
-      </div>
-      <div className="card__row">
-        <img src={imgClass} alt="icon of animal class" />
-        <span>{animalClass}</span>
-      </div>
-      <div className="card__row">
-        <img src={imgDiet} alt="icon of animal diet" />
-        <span>{diet}</span>
-      </div>
-      <div className="card__row">
-        <img src={imgHabitat} alt="icon of animal habitat" />
-        <span>{habitat}</span>
       </div>
     </div>
   );

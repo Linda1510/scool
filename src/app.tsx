@@ -9,6 +9,7 @@ import ProgressBar from "./features/progressBar/progresBarr";
 import Animals from "./features/animal/animal";
 import LoaderPage from "./features/loader/loader-page";
 import SelectPage from "./features/select/select-page";
+import AnimalCreate from "./features/animal/animal-create";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
             element={<ProgressBar color="red" progress={50} />}
           />
           <Route path="animals" element={<Animals />} />
-          <Route path="animals/new" element={<>Novi page</>} />
+          <Route path="animals/new" element={<AnimalCreate />} />
           <Route path="animals/:animalId" element={<>neke životinja</>} />
 
           {/* Using path="*" means "match anything", so this route
