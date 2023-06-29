@@ -14,6 +14,7 @@ export type AnimalType = {
   animalClass: string;
   diet: string;
   habitat: string;
+  id:string
 };
 
 const noOfItems = 20;
@@ -38,6 +39,7 @@ const Animals = () => {
   const [page, setPage] = useState<number>(1);
   //rows per page (limit koliko itema vidimo od jednom)
   const [rpp, setRpp] = useState<number>(8);
+const [noOfItems, setNoOfItems]=useState<number>(0);
 
   const getAnimals = () => {
     setLoading(true);
@@ -55,7 +57,21 @@ const Animals = () => {
       })
       .catch((err) => console.log(err));
   };
-
+ setLoading(true);
+    fetch(`http://localhost:3000/animals?_page=${page}&_limit=${rpp}`)
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+      })
+      .then((data) => {
+        setTimeout(() => {
+          setAnimals(data);
+          setLoading(false);
+        }, 300);
+      })
+      .catch((err) => console.log(err));
+  };
   useEffect(() => {
     const numberOfPages = Math.ceil(noOfItems / rpp);
     if (page > numberOfPages) {

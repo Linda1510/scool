@@ -6,10 +6,11 @@ import Home from "./features/home";
 import NoMatch from "./features/no-match";
 import Contact from "./features/contact/contact";
 import ProgressBar from "./features/progressBar/progresBarr";
-import Animals from "./features/animal/animal";
+
 import LoaderPage from "./features/loader/loader-page";
 import SelectPage from "./features/select/select-page";
 import AnimalCreate from "./features/animal/animal-create";
+import Animals from "./features/animal/animal";
 
 function App() {
   return (
@@ -18,7 +19,6 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
 
-          <Route path="animals" element={<Animals />} />
           <Route path="loader" element={<LoaderPage />} />
           <Route path="contact" element={<Contact />} />
           <Route path="select" element={<SelectPage />} />

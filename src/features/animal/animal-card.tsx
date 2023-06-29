@@ -1,11 +1,12 @@
+import Button from "../../components/button";
 import { AnimalType } from "./animal";
-import imgpaw from "./../../assets/image/paw.png";
+
 type AnimalCardProps = {
   animal: AnimalType;
 };
 
-const AnimalCard = ({ animal }: AnimalCardProps) => {
-  const { name, species } = animal;
+const AnimalCard = ({ animal, onDelete }: AnimalCardProps) => {
+  const { name, species, id } = animal;
 
   return (
     <div className="card">
@@ -24,6 +25,7 @@ const AnimalCard = ({ animal }: AnimalCardProps) => {
           <div className="card__subtitle">{species}</div>
         </div>
       </div>
+      <Button text="delete" color="red" onClick={() => onDelete(id)} />
     </div>
   );
 };

@@ -73,7 +73,7 @@
       "habitat": "Various habitats, including mountains and forests"
     },
     {
-      "id": 9,
+      "id": "10",
       "name": "Dolphin",
       "species": "Delphinidae",
       "class": "Mammal",
@@ -81,7 +81,7 @@
       "habitat": "Oceans and seas"
     },
     {
-      "id": 10,
+      "id": "11",
       "name": "Panda",
       "species": "Ailuropoda melanoleuca",
       "class": "Mammal",
@@ -89,6 +89,7 @@
       "habitat": "Bamboo forests"
     },
     {
+      "id": "12",
       "name": "Gorilla",
       "species": "Gorilla gorilla",
       "class": "Mammal",
@@ -96,6 +97,7 @@
       "habitat": "Rainforests"
     },
     {
+      "id": "13",
       "name": "Koala",
       "species": "Phascolarctos cinereus",
       "class": "Mammal",
@@ -103,6 +105,7 @@
       "habitat": "Eucalyptus forests"
     },
     {
+      "id": "14",
       "name": "Hippopotamus",
       "species": "Hippopotamus amphibius",
       "class": "Mammal",
@@ -110,6 +113,7 @@
       "habitat": "Rivers and lakes"
     },
     {
+      "id": "15",
       "name": "Peacock",
       "species": "Pavo cristatus",
       "class": "Bird",
@@ -117,6 +121,7 @@
       "habitat": "Grasslands and forests"
     },
     {
+      "id": "16",
       "name": "Crocodile",
       "species": "Crocodylus niloticus",
       "class": "Reptile",
@@ -124,6 +129,7 @@
       "habitat": "Rivers and wetlands"
     },
     {
+      "id": "17",
       "name": "Polar Bear",
       "species": "Ursus maritimus",
       "class": "Mammal",
@@ -131,6 +137,7 @@
       "habitat": "Arctic regions"
     },
     {
+      "id": "18",
       "name": "Giant Panda",
       "species": "Ailuropoda melanoleuca",
       "class": "Mammal",
@@ -138,6 +145,7 @@
       "habitat": "Bamboo forests"
     },
     {
+      "id": "19",
       "name": "Gibbon",
       "species": "Hylobatidae",
       "class": "Mammal",
@@ -145,6 +153,7 @@
       "habitat": "Tropical rainforests"
     },
     {
+      "id": "20",
       "name": "Ostrich",
       "species": "Struthio camelus",
       "class": "Bird",

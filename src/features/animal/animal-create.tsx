@@ -12,6 +12,7 @@ const initialData: AnimalType = {
   animalClass: "",
   diet: "",
   habitat: "",
+  id: "",
 };
 const dataHeaders = {
   "Content-Type": "application/json",
