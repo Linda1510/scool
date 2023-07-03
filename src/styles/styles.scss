@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-font-family:"Dancing",cursive ;
+  font-family: "Dancing", cursive;
 }
 //responsive break points
 $media-sm: 37.5em;
@@ -26,9 +26,9 @@ $media-lg: 64em;
   --color-blue-500: #136297;
   --color-yelow-200: #f4f18f;
   --color-red-200: #c2200e;
-  --color-pink-500:rgb(255, 192, 203);
-  --color-pink-200:rgb(246, 219, 223);
-  --color-pink-600:rgb(220, 101, 121);
+  --color-pink-500: rgb(255, 192, 203);
+  --color-pink-200: rgb(246, 219, 223);
+  --color-pink-600: rgb(220, 101, 121);
   //border
   --border-rounded: 0.5rem;
   --border-circle: 1000rem;
@@ -46,5 +46,7 @@ $media-lg: 64em;
 @import "./components/no-match.scss";
 @import "./components/message.scss";
 @import "./utils/type.scss";
+@import "./components/loader.scss";
+
 //utils
 @import "./utils/grid.scss";
