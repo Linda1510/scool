@@ -44,17 +44,17 @@
       height: 100%;
       background: repeating-linear-gradient(
         45deg,
-        var(--color-green-500),
-        var(--color-green-500) 1rem,
-        var(--color-green-600) 1rem,
-        var(--color-green-600) 2rem
+        var(--color-pink-500),
+        var(--color-pink-500) 1rem,
+        var(--color-pink-600) 1rem,
+        var(--color-pink-600) 2rem
       );
       animation: gradient-move 1s linear infinite;
     }
   }
   &--finished {
-    border-color: var(--color-green-500);
+    border-color: var(--color-pink-500);
     animation: progress-finish 0.75s ease-in-out;
-    box-shadow: 0 0 1.5rem 0.1rem var(--color-green-500);
+    box-shadow: 0 0 1.5rem 0.1rem var(--color-pink-600);
   }
 }

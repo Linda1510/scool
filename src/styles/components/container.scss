@@ -2,6 +2,9 @@
   max-width: 64rem;
   margin: 0 auto;
   padding: 0 2rem;
+  @media (min-width: $media-sm) {
+    padding: 0 2rem;
+  }
   &--md {
     max-width: 64rem;
   }

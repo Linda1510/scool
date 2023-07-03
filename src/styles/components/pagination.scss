@@ -4,11 +4,13 @@
   margin-bottom: 2rem;
   justify-content: center;
   &__item {
-    width: 1.5rem;
+    background-color: var(--color-pink-500);
+    
     font-size: 1.25rem;
-    margin-right: 1rem;
     padding: 0.5, 1rem;
-    border: 1px solid black;
+    border-radius: var(--border-rounded);
+    margin-right: 1rem;
+    border: 1px solid var(--color-blue-500);
     cursor: pointer;
     transition: all 250ms ease-in-out;
 
@@ -19,7 +21,9 @@
       margin-right: 0;
     }
     &.isActive {
-      background-color: aqua;
+      background-color: var(--color-pink-500);
+      color: var(--color-blue-500);
+      border-color: var(--color-yelow-200);
     }
     &.isDisabled {
       opacity: 0.5;
